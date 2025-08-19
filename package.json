@@ -1,0 +1,47 @@
+{
+  "name": "mychain-blockchain",
+  "version": "1.0.0",
+  "description": "A complete blockchain project built with Cosmos SDK and CosmJS",
+  "main": "client/cosmjs-client.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node client/cosmjs-client.ts",
+    "test": "jest",
+    "lint": "eslint client/**/*.ts",
+    "explorer": "cd web/explorer && python3 -m http.server 8080"
+  },
+  "keywords": [
+    "blockchain",
+    "cosmos",
+    "cosmjs",
+    "typescript",
+    "web3"
+  ],
+  "author": "Jane900928",
+  "license": "MIT",
+  "dependencies": {
+    "@cosmjs/stargate": "^0.31.3",
+    "@cosmjs/proto-signing": "^0.31.3",
+    "@cosmjs/amino": "^0.31.3",
+    "@cosmjs/tendermint-rpc": "^0.31.3",
+    "@cosmjs/cosmwasm-stargate": "^0.31.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jane900928/mychain-blockchain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jane900928/mychain-blockchain/issues"
+  },
+  "homepage": "https://github.com/Jane900928/mychain-blockchain#readme"
+}
